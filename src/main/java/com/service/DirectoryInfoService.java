@@ -1,10 +1,10 @@
-package com.service;// Unpublished Work (c) 2018 Deere & Company
+package com.service;
 
 import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class DirectoryInfoService implements com.FileInfoService {
+public class DirectoryInfoService implements FileInfoService {
 
     public String execute(String input) {
         String[] split = input.split(" ");
@@ -24,12 +24,12 @@ public class DirectoryInfoService implements com.FileInfoService {
 
         if(file.isDirectory()){
             builder.append("Type: "+ "File" + "\n");
-            builder.append("Size: "+ file.length() + "\n");
+            builder.append("Size: ").append(file.length()).append("\n");
         }else{
             builder.append("Type: "+ "Directory" + "\n");
         }
 
-        builder.append("Created :"+ (modifiedDate)+ "\n");
+        builder.append("Created :").append(modifiedDate).append("\n");
         builder.append("200 OK");
 
         return builder.toString();

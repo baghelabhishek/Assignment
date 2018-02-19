@@ -1,8 +1,8 @@
-package com.service;// Unpublished Work (c) 2018 Deere & Company
+package com.service;
 
 import java.io.File;
 
-public class ChangeDirctoryService implements com.FileInfoService {
+public class ChangeDirctoryService implements FileInfoService {
 
     public String execute(String input) {
         String[] split = input.split(" ");

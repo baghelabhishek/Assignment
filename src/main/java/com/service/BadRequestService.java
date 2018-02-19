@@ -1,6 +1,6 @@
-package com.service;// Unpublished Work (c) 2018 Deere & Company
+package com.service;
 
-public class BadRequestService implements com.FileInfoService {
+public class BadRequestService implements FileInfoService {
 
     @Override
     public String execute(String input) {
